@@ -2,6 +2,7 @@ package testPom.TestBookPage;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import pom.BookPage.BookElement1;
 import pom.BookPage.BookHomePage;
 import pom.Homepage;
@@ -27,7 +28,10 @@ public class TestBookElement1 extends TestBase {
         waitForElementToContainText(bookElement1.getProductTitle, "Peril");
         String actualText = bookElement1.getProductTitle.getText();
         String expectedText = "Peril";
-        Assert.assertEquals(expectedText, actualText);
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertEquals(expectedText, actualText);
+        // Assert.assertEquals(expectedText, actualText);
+        softAssert.assertAll();
         System.out.println("FOUND BOOK");
     }
 }

@@ -15,6 +15,7 @@
             <class name="testPom.TestBookPage.TestBookElement3"/>
             <class name="testPom.TestBookPage.TestBookElement4"/>
             <class name="testPom.TestBookPage.TestBookElement5"/>
+            <class name="testPom.TestBookPage.TestBookElement6"/>
         </classes>
     </test>
 
@@ -29,6 +30,7 @@
                <class name="testPom.TestBookPage.TestBookElement3"/>
                <class name="testPom.TestBookPage.TestBookElement4"/>
                <class name="testPom.TestBookPage.TestBookElement5"/>
+               <class name="testPom.TestBookPage.TestBookElement6"/>
             </classes>
         </test>
 </suite>

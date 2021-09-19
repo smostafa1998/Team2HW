@@ -30,6 +30,8 @@ public class BookHomePage extends BasePage {
     public WebElement BookElementLinkObject5;
 
 
+    @FindBy(xpath = "//*[@id=\"nav-subnav\"]/a[2]/span")
+    public WebElement BookElementLinkObject6;
 
 
 
@@ -52,6 +54,11 @@ public class BookHomePage extends BasePage {
     public BookElement4 navigateToBookElement4() {
         clickOnElement(BookElementLinkObject4);
         return new BookElement4();
+    }
+
+    public BookElement6 navigateToBookElement6(){
+        clickOnElement(BookElementLinkObject6);
+        return new BookElement6();
     }
 
 
