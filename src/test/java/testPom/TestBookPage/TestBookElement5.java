@@ -16,14 +16,14 @@ public class TestBookElement5 extends TestBase {
         clickOnElement(bookpage.BookElementLinkObject5);
         BookElement5 bookElement5 = new BookElement5();
         waitForElementToBeVisible(bookElement5.EnglishResults);
-        waitForElementToContainText(bookElement5.EnglishResults,"1-16 of over 70,000 results");
+        waitForElementToContainText(bookElement5.EnglishResults,"1-16 of over 80,000 results");
         String actualText = bookElement5.EnglishResults.getText();
-        String expectedText = "1-16 of over 70,000 results";
+        String expectedText = "1-16 of over 80,000 results";
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(expectedText, actualText);
         //Assert.assertEquals(expectedText, actualText);
         softAssert.assertAll();
-        System.out.println("1-16 of over 70,000 results");
+        System.out.println("1-16 of over 80,000 results");
         System.out.println("DONE");
     }
 }

@@ -19,7 +19,7 @@ public class Homepage extends BasePage {
     //clickOnElement
 
     /**
-     * this is to navigate to homepage
+     * this is to navigate from homepage to bookpage
      */
     @FindBy(xpath = "//*[@id=\"hmenu-content\"]/ul[1]/li[19]/a/div")
     public WebElement bookTabFind;
