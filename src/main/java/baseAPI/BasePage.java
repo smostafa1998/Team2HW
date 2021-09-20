@@ -20,7 +20,6 @@ import java.util.Properties;
 public class BasePage {
     public static WebDriver driver;
     public static WebDriverWait webDriverWait;
-
     private Properties properties;
     public final String ABSOLUTE_PATH = System.getProperty("user.dir");
     private final String PROPERTIES_RELATIVE_PATH = "/src/main/resources/secret.properties";
