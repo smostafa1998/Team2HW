@@ -10,7 +10,6 @@ import testBase.TestBase;
 public class TestHomepage extends TestBase {
 
     /**
-     * Test 1 (i think)
      * This is to test that from the amazon page it navigated to amazon book page
      */
     @Test

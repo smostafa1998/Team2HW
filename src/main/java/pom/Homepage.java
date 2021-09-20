@@ -11,17 +11,26 @@ public class Homepage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
+    /**
+     * This is the hamburger menu for the amazon page
+     */
     @FindBy(xpath = "//*[@id=\"nav-hamburger-menu\"]")
     public WebElement AllTab;
     //clickOnElement
 
+    /**
+     * this is to navigate to homepage
+     */
     @FindBy(xpath = "//*[@id=\"hmenu-content\"]/ul[1]/li[19]/a/div")
     public WebElement bookTabFind;
 
     @FindBy(xpath = "//*[@id=\"hmenu-content\"]/ul[12]/li[3]/a")
     public WebElement bookTabBook;
 
-
+    /**
+     * Navigate to Book Page
+     * @return
+     */
     public BookHomePage navigateToBookPage() {
         clickOnElement(AllTab);
         clickOnElement(bookTabFind);
