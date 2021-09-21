@@ -17,8 +17,6 @@ public class BookHomePage extends BasePage {
     @FindBy(xpath = "//*[@id=\"anonCarousel1\"]/ol/li[1]/div/a[2]/span/div")
     public WebElement BookElementLinkObject1;
 
-
-
     @FindBy(xpath = "//*[@id=\"a-page\"]/div[2]/div[2]/div[2]/div[1]/div[1]/ul[1]/li[1]/a")
     public WebElement BookElementLinkObject2;
 
@@ -34,7 +32,6 @@ public class BookHomePage extends BasePage {
 
     @FindBy(xpath = "//*[@id=\"nav-subnav\"]/a[2]/span")
     public WebElement BookElementLinkObject6;
-
 
 
     //this navigates from the og bookpage to the book peril page
@@ -58,7 +55,7 @@ public class BookHomePage extends BasePage {
         return new BookElement4();
     }
 
-    public BookElement6 navigateToBookElement6(){
+    public BookElement6 navigateToBookElement6() {
         clickOnElement(BookElementLinkObject6);
         return new BookElement6();
     }

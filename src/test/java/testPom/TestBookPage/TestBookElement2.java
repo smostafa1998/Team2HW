@@ -18,7 +18,7 @@ public class TestBookElement2 extends TestBase {
         waitForElementToContainText(bookElement2.getAABio ,"AFRICAN AMERICAN BIOGRAPHIES");
         String actualText = bookElement2.getAABio.getText();
         String expectedText = "AFRICAN AMERICAN BIOGRAPHIES";
-        Assert.assertEquals(expectedText, actualText);
+        Assert.assertEquals(actualText,expectedText);
         System.out.println("FOUND AFRICAN AMERICAN BIOGRAPHIES");
     }
 

@@ -29,7 +29,7 @@ public class TestBookElement1 extends TestBase {
         String actualText = bookElement1.getProductTitle.getText();
         String expectedText = "Peril";
         SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(expectedText, actualText);
+        softAssert.assertEquals(actualText,expectedText);
         // Assert.assertEquals(expectedText, actualText);
         softAssert.assertAll();
         System.out.println("FOUND BOOK");

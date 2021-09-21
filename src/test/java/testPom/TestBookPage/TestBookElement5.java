@@ -20,7 +20,7 @@ public class TestBookElement5 extends TestBase {
         String actualText = bookElement5.EnglishResults.getText();
         String expectedText = "1-16 of over 80,000 results";
         SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(expectedText, actualText);
+        softAssert.assertEquals(actualText,expectedText);
         //Assert.assertEquals(expectedText, actualText);
         softAssert.assertAll();
         System.out.println("1-16 of over 80,000 results");

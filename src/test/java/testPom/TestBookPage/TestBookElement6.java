@@ -25,7 +25,7 @@ public class TestBookElement6 extends TestBase {
         String actualText = bookElement6.confirmEditorsPick.getText();
         String expectedText = "The Invisible Life of Addie LaRue, Special Edition";
         SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(expectedText, actualText);
+        softAssert.assertEquals(actualText,expectedText);
         //Assert.assertEquals(expectedText, actualText);
         softAssert.assertAll();
         System.out.println("The Invisible Life of Addie LaRue, Special Edition");

@@ -16,7 +16,7 @@ public class BookElement6 extends BasePage {
     @FindBy(xpath="//*[@id=\"asMain\"]/tbody/tr[2]/td/input")
     public WebElement confirmClick;
 
-    @FindBy(xpath="//*[@id=\"search\"]/div[1]/div[1]/div/span[3]/div[2]/div[1]/div/span/div/div/div[2]/div[2]/div/div/div[1]/h2/a/span")
+    @FindBy(xpath="//*[@id=\"search\"]//div[1]//span[3]/div[2]/div[1]//span//div[2]//div[1]/h2/a/span")
     public WebElement confirmEditorsPick;
 }
 

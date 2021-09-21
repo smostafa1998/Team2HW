@@ -19,7 +19,7 @@ public class TestBookElement3 extends TestBase {
         waitForElementToContainText(bookElement3.ArtPhoto ,"Arts & Photography Books");
         String actualText = bookElement3.ArtPhoto.getText();
         String expectedText = "Arts & Photography Books";
-        Assert.assertEquals(expectedText, actualText);
+        Assert.assertEquals(actualText,expectedText);
         System.out.println("Arts & Photography Books");
     }
 }

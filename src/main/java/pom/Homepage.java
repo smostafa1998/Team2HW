@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import pom.BookPage.BookHomePage;
+import pom.FashionPage.FashionHomePage;
 
 public class Homepage extends BasePage {
     public Homepage() {
@@ -28,6 +29,15 @@ public class Homepage extends BasePage {
     public WebElement bookTabBook;
 
     /**
+     * this is to navigate from homepage to fashionpage
+     */
+    @FindBy(xpath="//*[@id=\"hmenu-content\"]/ul[1]/li[17]/a/div")
+    public WebElement fashionTabFind;
+
+    @FindBy(xpath="//*[@id=\"hmenu-content\"]/ul[10]/li[3]/a")
+    public WebElement fashionTab;
+
+    /**
      * Navigate to Book Page
      * @return
      */
@@ -38,6 +48,18 @@ public class Homepage extends BasePage {
         System.out.println("clicked on book tab");
 
         return new BookHomePage();
+    }
+
+    /**
+     * Navigate to Fashion Page
+     */
+    public FashionHomePage navigateToFashionPage(){
+        clickOnElement(AllTab);
+        clickOnElement(fashionTabFind);
+        clickOnElement(fashionTab);
+        System.out.println("click on fashion tab");
+
+        return new FashionHomePage();
     }
 
 
