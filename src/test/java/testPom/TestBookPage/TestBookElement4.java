@@ -13,7 +13,6 @@ public class TestBookElement4 extends TestBase {
     public void verifyInBookHomePage4(){
         Homepage homepage = getHomepage();
         BookHomePage bookpage = homepage.navigateToBookPage();
-
         waitForElementToContainText(bookpage.BookElementLinkObject4,"Children's Books");
         BookElement4 bookElement4 = bookpage.navigateToBookElement4();
         waitForElementToBeVisible(bookElement4.childrenBooks);

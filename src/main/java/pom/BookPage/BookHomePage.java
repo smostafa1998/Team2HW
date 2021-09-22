@@ -14,7 +14,7 @@ public class BookHomePage extends BasePage {
     @FindBy(xpath = "//*[contains(@id,'contentGrid_')]//h2")
     public WebElement bookLabel;
 
-    @FindBy(xpath = "//*[@id=\"anonCarousel1\"]/ol/li[1]/div/a[2]/span/div")
+    @FindBy(xpath = "//*[@id=\"anonCarousel1\"]/ol/li[1]/div/a[1]")
     public WebElement BookElementLinkObject1;
 
     @FindBy(xpath = "//*[@id=\"a-page\"]/div[2]/div[2]/div[2]/div[1]/div[1]/ul[1]/li[1]/a")
@@ -29,10 +29,11 @@ public class BookHomePage extends BasePage {
     @FindBy(xpath = "//*[@id=\"s-refinements\"]/div[7]/ul/li[1]/span/a/div/label/i")
     public WebElement BookElementLinkObject5;
 
-
     @FindBy(xpath = "//*[@id=\"nav-subnav\"]/a[2]/span")
     public WebElement BookElementLinkObject6;
 
+    @FindBy(xpath = "//*[@id=\"nav-subnav\"]/a[7]/span")
+    public WebElement BookElementLinkObject7;
 
     //this navigates from the og bookpage to the book peril page
     public BookElement1 navigateToBookElement1() {
@@ -58,6 +59,11 @@ public class BookHomePage extends BasePage {
     public BookElement6 navigateToBookElement6() {
         clickOnElement(BookElementLinkObject6);
         return new BookElement6();
+    }
+
+    public BookElement7 navigateToBookElement7() {
+        clickOnElement(BookElementLinkObject7);
+        return new BookElement7();
     }
 
 

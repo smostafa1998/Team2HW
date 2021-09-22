@@ -1,6 +1,5 @@
 package testPom.TestBookPage;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pom.BookPage.BookElement1;
@@ -11,26 +10,15 @@ import testBase.TestBase;
 public class TestBookElement1 extends TestBase {
     @Test(enabled = false)
     public void verifyInBookHomePage() {
-        //TestBookHomePage
         Homepage homepage = getHomepage();
-        // BookHomePage bookpage = getBookPage();
-        //goes to book page
         BookHomePage bookpage = homepage.navigateToBookPage();
-        // check to see element
-        // Actions actions = new Actions(driver);
-        //actions.moveToElement(bookpage.BookElementLinkObject1);
-        //actions.perform();
-
-        waitForElementToContainText(bookpage.BookElementLinkObject1,"Peril");
         BookElement1 bookElement1 = bookpage.navigateToBookElement1();
-        // find the element to verify
         waitForElementToBeVisible(bookElement1.getProductTitle);
         waitForElementToContainText(bookElement1.getProductTitle, "Peril");
         String actualText = bookElement1.getProductTitle.getText();
         String expectedText = "Peril";
         SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(actualText,expectedText);
-        // Assert.assertEquals(expectedText, actualText);
+        softAssert.assertEquals(actualText, expectedText);
         softAssert.assertAll();
         System.out.println("FOUND BOOK");
     }
