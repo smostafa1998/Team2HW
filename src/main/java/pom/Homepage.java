@@ -17,7 +17,6 @@ public class Homepage extends BasePage {
      */
     @FindBy(xpath = "//*[@id=\"nav-hamburger-menu\"]")
     public WebElement AllTab;
-    //clickOnElement
 
     /**
      * this is to navigate from homepage to bookpage

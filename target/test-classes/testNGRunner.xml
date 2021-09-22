@@ -16,7 +16,6 @@
             <class name="testPom.TestBookPage.TestBookElement5"/>
             <class name="testPom.TestBookPage.TestBookElement6"/>
             <class name="testPom.TestBookPage.TestBookElement7"/>
-            <class name="testPom.TestFashionPage.TestFashionHomePage"/>
             <class name="testPom.TestFashionPage.TestFashionElement1"/>
             <class name="testPom.TestFashionPage.TestFashionElement2"/>
             <class name="testPom.TestFashionPage.TestFashionElement3"/>
@@ -38,7 +37,6 @@
                <class name="testPom.TestBookPage.TestBookElement5"/>
                <class name="testPom.TestBookPage.TestBookElement6"/>
                <class name="testPom.TestBookPage.TestBookElement7"/>
-               <class name="testPom.TestFashionPage.TestFashionHomePage"/>
                <class name="testPom.TestFashionPage.TestFashionElement1"/>
                <class name="testPom.TestFashionPage.TestFashionElement2"/>
                <class name="testPom.TestFashionPage.TestFashionElement3"/>
