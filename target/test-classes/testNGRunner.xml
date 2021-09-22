@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test1" verbose="1" >
+    <test name="TestBook" >
+               <groups>
+                    <run>
+                       <include name="Regression"/>
+                   </run>
+               </groups>
+        <classes>
+            <class name="testPom.TestHomepage"/>
+            <class name="testPom.TestBookPage.TestBookHomePage"/>
+            <class name="testPom.TestBookPage.TestBookElement1"/>
+            <class name="testPom.TestBookPage.TestBookElement2"/>
+            <class name="testPom.TestBookPage.TestBookElement3"/>
+            <class name="testPom.TestBookPage.TestBookElement4"/>
+            <class name="testPom.TestBookPage.TestBookElement5"/>
+            <class name="testPom.TestBookPage.TestBookElement6"/>
+        </classes>
+    </test>
+
+    <parameter name="browserName" value="chrome"/>
+
+       <test name="Navigation">
+           <classes>
+                <class name="testPom.TestHomepage"/>
+                <class name="testPom.TestBookPage.TestBookHomePage"/>
+               <class name="testPom.TestBookPage.TestBookElement1"/>
+               <class name="testPom.TestBookPage.TestBookElement2"/>
+               <class name="testPom.TestBookPage.TestBookElement3"/>
+               <class name="testPom.TestBookPage.TestBookElement4"/>
+               <class name="testPom.TestBookPage.TestBookElement5"/>
+               <class name="testPom.TestBookPage.TestBookElement6"/>
+            </classes>
+        </test>
+</suite>

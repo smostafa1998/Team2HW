@@ -4,7 +4,10 @@ import baseAPI.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
 import pom.BookPage.BookHomePage;
+import pom.KindleBookPage.KindleBooksHomePage;
+import pom.KindleBookPage.Kindle_3;
 
 public class Homepage extends BasePage {
     public Homepage() {
@@ -18,19 +21,20 @@ public class Homepage extends BasePage {
     public WebElement AllTab;
     //clickOnElement
 
-    /**
-     * this is to navigate from homepage to bookpage
-     */
+
     @FindBy(xpath = "//*[@id=\"hmenu-content\"]/ul[1]/li[19]/a/div")
     public WebElement bookTabFind;
 
     @FindBy(xpath = "//*[@id=\"hmenu-content\"]/ul[12]/li[3]/a")
     public WebElement bookTabBook;
 
-    /**
-     * Navigate to Book Page
-     * @return
-     */
+    @FindBy(xpath = "//*[@id=\"hmenu-content\"]/ul[1]/li[12]/a/i")
+    public WebElement Kindleereader;
+
+    @FindBy(xpath = "//*[@id=\"hmenu-content\"]/ul[7]/li[3]/a")
+    public WebElement KindleKids;
+
+
     public BookHomePage navigateToBookPage() {
         clickOnElement(AllTab);
         clickOnElement(bookTabFind);
@@ -40,5 +44,13 @@ public class Homepage extends BasePage {
         return new BookHomePage();
     }
 
+    public KindleBooksHomePage navigateToKindleBookPage() {
+      clickOnElement(AllTab);
+      clickOnElement(Kindleereader);
+      clickOnElement(KindleKids);
+      System.out.println("Kindlebooks");
+
+        return new KindleBooksHomePage();
+    }
 
 }
